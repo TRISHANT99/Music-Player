@@ -1,0 +1,138 @@
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Rubik:ital@1&display=swap");
+nav {
+  font-family: "Rubik", sans-serif;
+  /* font-family: "Roboto Mono", monospace; */
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.247);
+}
+nav > ul > li {
+  padding: 0 12px;
+  font-weight: bolder;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+nav > ul > li > a:hover {
+  color: antiquewhite;
+  font-weight: bold;
+  cursor: pointer;
+}
+.brand img {
+  width: 45px;
+}
+.brand {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.container {
+  min-height: 65vh;
+  background-color: rgba(0, 0, 0, 0.322);
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 12px;
+  padding: 10px;
+  background-image: url(./pic2.webp);
+  color: antiquewhite;
+}
+
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.322);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#myProgressBar {
+  width: 80vw;
+  text-align: center;
+  cursor: pointer;
+}
+.icons {
+  margin-top: 20px;
+}
+.icons i {
+  cursor: pointer;
+}
+.songItem {
+  height: 50px;
+  display: flex;
+  /* background-color: white; */
+  width: 70%;
+  margin: 12px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.songItem > img {
+  width: 50px;
+  border-radius: 30%;
+}
+.timestamp > i {
+  cursor: pointer;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-weight: bolder;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+/* css for about us page */
+.containerAbout {
+  min-height: 65vh;
+  background-color: rgba(0, 0, 0, 0.322);
+  font-family: "Rubik", sans-serif;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 12px;
+  padding: 10px;
+  background-image: url(./pic2.webp);
+  color: antiquewhite;
+}
+.containerAbout h2 {
+  margin-top: 2vh;
+}
+.containerAbout .para {
+  padding: 3% 10%;
+  text-align: center;
+  font-weight: bold;
+}
+.containerAbout .para2 {
+  padding: 3% 10%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* media query  */
+@media only screen and (max-width: 500px) {
+  .songInfo {
+    margin-top: 14vh;
+  }
+  .icons {
+    height: 60%;
+  }
+  .container{
+    margin-top: 10px;
+  }
+}
